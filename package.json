@@ -1,5 +1,5 @@
 {
-  "name": "boostrap-project",
+  "name": "ascii",
   "version": "1.0.0",
   "description": "",
   "dependencies": {
@@ -28,7 +28,9 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --open --config webpack.dev.js"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build-feature": "webpack --config webpack.features.js",
+    "start-feature": "webpack serve --open --config webpack.features.js"
   },
   "author": "",
   "license": "ISC"
