@@ -29,8 +29,8 @@
     "test": "jest",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js",
-    "build-feature": "webpack --config webpack.features.js",
-    "start-feature": "webpack serve --open --config webpack.features.js"
+    "build-feature-map": "webpack --config webpack.feat-map.js",
+    "start-feature-map": "webpack serve --open --config webpack.feat-map.js"
   },
   "author": "",
   "license": "ISC"

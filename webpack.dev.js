@@ -2,7 +2,7 @@
  * Fichier de configuration Webpack pour l'environnement de dev
  */
 
-// Grầce à webpack-merge on importe la config commune
+// Grâce à webpack-merge on importe la config commune et on peut override
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
 

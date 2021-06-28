@@ -4,23 +4,23 @@
  */
 
 const path = require('path')
-const { merge } = require('webpack-merge')
+const {
+  merge,
+} = require('webpack-merge')
 const common = require('./webpack.common')
 
-common.entry = {
-  app: './src/features/map.ts',
-}
-
-common.output = {
-  filename: 'bundle.js',
-  path: path.resolve(__dirname, 'features'),
-  clean: true,
-}
-
 module.exports = merge(common, {
+  entry: {
+    app: './src/features/map/index.ts',
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'features/map'),
+    clean: true,
+  },
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './features',
+    contentBase: './features/map',
   },
 })
