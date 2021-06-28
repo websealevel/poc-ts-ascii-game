@@ -19,15 +19,28 @@ Pour chaque env isolé/feature `{feature}`, on doit fournir :
 
 - un fichier de config webpack `webpack.feat-{feature}.js`. Importer le fichier `webpack.dev.js` et changer le point d'entré et le point de sortie
 ```
-    common.entry = {
-        app: './src/features/{feature}/index.ts',
-    }
 
-    common.output = {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'features'),
-        clean: true,
-    }
+const path = require('path')
+const {
+  merge,
+} = require('webpack-merge')
+const common = require('./webpack.common')
+
+module.exports = merge(common, {
+  entry: {
+    app: './src/features/{feature}/index.ts',
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'features/{feature}'),
+    clean: true,
+  },
+  mode: 'development',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './features/{feature}',
+  },
+})
 ```
 - un point d'entré dans le path des sources `./src/features/{feature}/index.ts`
 - un path de sortie pour le build `./features/{feature}/`
