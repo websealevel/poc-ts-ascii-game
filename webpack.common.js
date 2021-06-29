@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'app',
+      title: 'game',
     }),
   ],
   resolve: {
