@@ -11,7 +11,7 @@ const common = require('./webpack.common')
 
 module.exports = merge(common, {
   entry: {
-    app: './src/features/map/index.ts',
+    app: './features/map/index.ts',
   },
   output: {
     filename: 'bundle.js',

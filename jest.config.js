@@ -9,7 +9,7 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
   roots: [
-    '<rootDir>/src',
+    '<rootDir>/tests',
   ],
   transform: {
     '\\.(ts)$': 'ts-jest',
