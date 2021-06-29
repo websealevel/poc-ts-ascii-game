@@ -10,6 +10,17 @@ Projet de jeu en ASCII, HTML5/TypeScript
 
 `npm run build`
 
+# Tests unitaires
+
+Jest
+
+`npm run test`
+
+# Librairies notables
+
+- (Ramda)[https://ramdajs.com/] : lib fonctionnelle
+- (Reatom)[https://reatom.js.org/#/] : gestionnaire d'état
+
 # Features : env isolés
 
 Pour tester des fonctionnalités dans des environnements isolés (ex: carte, système d'inventaire...), tout en gardant une codebase unique, on utilise

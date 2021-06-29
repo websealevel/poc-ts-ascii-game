@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "@reatom/core": "^1.1.5",
     "html-webpack-plugin": "^5.3.2",
-    "lodash": "^4.17.21",
     "ramda": "^0.27.1",
     "ts-jest": "^27.0.3",
     "webpack-merge": "^5.8.0"
