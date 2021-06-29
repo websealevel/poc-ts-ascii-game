@@ -2,26 +2,36 @@
 
 Projet de jeu en ASCII, HTML5/TypeScript
 
-# Servir le projet
+## Game doc
+
+Description du jeu
+
+## Carnets de dev
+
+Documentation de features
+
+## Installer le projet / Dev
+
+### Servir le projet
 
 `npm run start`
 
-# Build le projet
+### Build le projet
 
 `npm run build`
 
-# Tests unitaires
+### Tests unitaires
 
 Jest
 
 `npm run test`
 
-# Librairies notables
+### Librairies notables
 
-- (Ramda)[https://ramdajs.com/] : lib fonctionnelle
-- (Reatom)[https://reatom.js.org/#/] : gestionnaire d'état
+- [Ramda](https://ramdajs.com/) : lib fonctionnelle
+- [Reatom](https://reatom.js.org) : gestionnaire d'état
 
-# Features : env isolés
+### Features : env isolés
 
 Pour tester des fonctionnalités dans des environnements isolés (ex: carte, système d'inventaire...), tout en gardant une codebase unique, on utilise
 des bundlers (fichiers de config webpacks) spécifiques. 
