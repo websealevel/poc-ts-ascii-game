@@ -12,4 +12,5 @@ function componentCanvas() {
 document.body.appendChild(componentCanvas())
 init()
 
+// Test Ramda
 console.log(R.add(2, 5))
