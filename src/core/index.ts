@@ -1,4 +1,5 @@
 import draw from './render'
+import canvas from './state/canvas'
 
 /**
  * Met à jour l'état du jeu
@@ -22,6 +23,7 @@ function gameLoop(time: number) {
   window.requestAnimationFrame(gameLoop)
 }
 
-export default function init() {
+export default function start() {
+  document.body.appendChild(canvas)
   window.requestAnimationFrame(gameLoop)
 }
