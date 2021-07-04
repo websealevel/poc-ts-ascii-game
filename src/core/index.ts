@@ -1,4 +1,4 @@
-import dtmax from './time'
+import draw from './render'
 
 /**
  * Met à jour l'état du jeu
@@ -10,15 +10,14 @@ function update(dt: number): number {
 }
 
 /**
- *Peint sur le canvas
+ * Gameloop : update, draw, requestFrame
+ * @param t
  */
-function draw() {
-
-}
-
-function gameLoop(t: number) {
-  const dt = dtmax(t)
-  update(dt)
+function gameLoop(time: number) {
+  // Calcule dt
+  // Calcule le dtmax
+  // Met a jour l'état du jeu
+  // Repeind le canvas
   draw()
   window.requestAnimationFrame(gameLoop)
 }
