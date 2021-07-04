@@ -1,6 +1,6 @@
 import * as R from 'ramda'
 import init from './core/index'
-import canvas from './core/state'
+import canvas from './core/state/canvas'
 
 document.body.appendChild(canvas)
 init()

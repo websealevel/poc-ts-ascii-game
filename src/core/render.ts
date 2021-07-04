@@ -1,4 +1,4 @@
-import canvas from './state'
+import canvas from './state/canvas'
 
 /**
  *Peint sur le canvas
